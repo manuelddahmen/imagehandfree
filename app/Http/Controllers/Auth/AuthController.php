@@ -26,7 +26,7 @@ class AuthController extends Controller
     |
     */
 	use AuthenticatesUsers, RegistersUsers;
-	}
+	
 	
 	protected function redirectTo()
 
