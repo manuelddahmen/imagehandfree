@@ -165,13 +165,17 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
-	    $res->save();
+	    
         if ($res != NULL) {
             ExtraRegisterOperations::createRootFolder($data["email"]);
             ExtraRegisterOperations::sendRegisteredUserEmail($data["email"]);
 
             $res->save();
-        }
+            echo "User created";
+        } else {   
+		echo "User creation error";
+	
+	}
         return $res;
 
     }
