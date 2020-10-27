@@ -29,7 +29,7 @@ class AuthController extends Controller
 		AuthenticatesUsers::redirectPath insteadof RegistersUsers;
 		AuthenticatesUsers::guard insteadof RegistersUsers;
 	}*/
-
+use RegistersUsers;
 	protected function redirectTo()
 
     {
