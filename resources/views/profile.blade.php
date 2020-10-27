@@ -15,7 +15,7 @@
     <form action="{{asset('profile/save')}}" method="POST">
     <table>
         <tr>
-            <td><label for=currentPassword2">Entrez &agrave; nouveau votre mot de passe pour modifier</label></td>
+            <td><label for="currentPassword2">Entrez &agrave; nouveau votre mot de passe pour modifier</label></td>
             <td><input class="required"name="currentPassword2" value=""/></td>
         </tr>
         <tr>
