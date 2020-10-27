@@ -24,12 +24,10 @@ class AuthController extends Controller
     | authentication of existing users. By default, this controller uses
     | a simple trait to add these behaviors. Why don't you explore it?
     |
-    *//*
-	use /*AuthenticatesUsers, RegistersUsers {
-		AuthenticatesUsers::redirectPath insteadof RegistersUsers;
-		AuthenticatesUsers::guard insteadof RegistersUsers;
-	}*/
-use RegistersUsers;
+    */
+	use AuthenticatesUsers, RegistersUsers;
+	}
+	
 	protected function redirectTo()
 
     {
