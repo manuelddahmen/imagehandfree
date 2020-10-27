@@ -31,7 +31,6 @@ class AuthController extends Controller
 	}
 
 	protected function redirectTo()
-	protected function redirectTo()
 
     {
         return asset('auth/checkregistered');
