@@ -25,9 +25,12 @@ class AuthController extends Controller
     | a simple trait to add these behaviors. Why don't you explore it?
     |
     */
-	use AuthenticatesUsers, RegistersUsers;
-	
-	
+	use AuthenticatesUsers, RegistersUsers {
+		AuthenticatesUsers::redirectPath insteadof RegistersUsers;
+		AuthenticatesUsers::guard insteadof RegistersUsers;
+	}
+
+	protected function redirectTo()
 	protected function redirectTo()
 
     {
